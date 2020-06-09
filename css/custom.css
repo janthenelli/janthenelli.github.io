@@ -29,7 +29,7 @@ html {
 }
 
 .name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -84,7 +84,7 @@ html {
 }
  
 .about-text {
-    padding: 0 40px;
+    padding: 0;
     font-weight: 500;
 }
 
@@ -126,7 +126,8 @@ html {
 }
 
 .project-card {
-    width: 90%;
+    width: 100%;
+    padding: 0;
 }
 
 .row .project-card:nth-child(1) .img-wrapper {
@@ -158,10 +159,10 @@ html {
 
 .img-wrapper {
     height: 200px;
-    min-width: 250px;
+    min-width: 150px;
     max-width: 600px;
     position: relative;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .project-img {
@@ -227,6 +228,7 @@ html {
 }
 
 .contact {
+    padding-left: 0;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -285,13 +287,17 @@ html {
     }
 }
 
-@media screen and (min-width: 775px) {
+@media screen and (min-width: 768px) {
     .img-wrapper {
-        height: 300px;
+        height: 350px;
+    }
+
+    .about-text {
+        padding: 0 40px;
     }
 }
 
-@media screen and (min-width: 1104px) {
+@media screen and (min-width: 1024px) {
     .about-content {
         flex-direction: row;
         margin: 0 20%
@@ -299,5 +305,13 @@ html {
     
     .about-content img {
         margin: 0;
+    }
+
+    .project-card {
+        padding: 0 20px;
+    }
+
+    #projects.container {
+        max-width: 90%;
     }
 }
