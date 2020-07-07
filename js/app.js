@@ -1,5 +1,13 @@
 
 
+$(".nav-item").one("click", () => {
+    console.log('dropdown nav item clicked')
+    if ($("#navbarSupportedContent").hasClass('show')) {
+        console.log('now inside if statment')
+        $("#navbarSupportedContent").removeClass('show')
+    }
+})
+
 $(".project-btn").hover(() => {
     $(".fa-angle-double-right").addClass("rotate")
 }, () => {
